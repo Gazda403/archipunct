@@ -167,7 +167,7 @@ export default function HeroSection() {
         className="absolute inset-x-0 z-10 hidden lg:flex items-center justify-center pointer-events-none select-none transform-gpu"
         style={{ top: "37%" }}
         initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 0.28, y: 0 }}
+        animate={{ opacity: 0.85, y: 0 }}
         transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
       >
         <h2
@@ -177,7 +177,7 @@ export default function HeroSection() {
             fontWeight: 700,
             fontSize: "clamp(2rem, 6.2vw, 7.5rem)",
             letterSpacing: "0.38em",
-            textShadow: "0 0 50px rgba(0,0,0,0.5)",
+            textShadow: "0 4px 30px rgba(0,0,0,0.8), 0 0 60px rgba(0,0,0,0.6)",
           }}
         >
           archipunct
