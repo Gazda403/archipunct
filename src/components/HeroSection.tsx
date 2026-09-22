@@ -132,7 +132,7 @@ export default function HeroSection() {
       >
         {/* ── Mobile / Tablet image ── */}
         <Image
-          src="/images/archipunct/3web-1-1245x700.jpg"
+          src="/images/archipunct/Perspektiva-1.jpg"
           alt="Archipunct Studio — autorski dizajn enterijera i arhitektura"
           fill
           priority
@@ -142,7 +142,7 @@ export default function HeroSection() {
         />
         {/* ── Desktop / Laptop image ── */}
         <Image
-          src="/images/archipunct/3web-1.jpg"
+          src="/images/archipunct/Perspektiva-1.jpg"
           alt="Archipunct Studio — autorski dizajn enterijera i arhitektura"
           fill
           priority
@@ -150,9 +150,9 @@ export default function HeroSection() {
           className="object-cover object-center hidden lg:block"
           quality={92}
         />
-        {/* Subtle vignette — darkens edges without killing the sky */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/60 via-transparent to-transparent" />
+        {/* Subtle vignette — darkens edges without killing the warm rendering */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/50 via-transparent to-transparent" />
       </m.div>
 
       {/* ═══════════════════════════════════════════════════════════════════════
