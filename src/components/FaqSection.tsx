@@ -5,16 +5,16 @@ import { m, AnimatePresence, Variants } from "framer-motion";
 
 const faqData = [
   {
-    question: "Da li pru\u017eate usluge sudskog i vansudskog ve\u0161ta\u010denja?",
-    answer: "Da. Du\u0161ko Vu\u010dkovi\u0107 je sertifikovani sudski vesta\u010d u oblasti visokogradnje i pru\u017ea sudska i vansudska ve\u0161ta\u010denja za gra\u0111evinske sporove, procenu tr\u017ei\u0161ne i gra\u0111evinske vrednosti nekretnina, kao i studije opravdanosti ulaganja.",
+    question: "Kako izgleda proces projektovanja enterijera i šta podrazumeva 360° virtuelna tura?",
+    answer: "Proces počinje detaljnom analizom Vaših potreba i zatečenog stanja. Nakon koncepta izrađujemo detaljne 3D modele i 360° virtuelnu turu, što Vam omogućava da realno doživite prostor, raspored, osvetljenje i materijale pre početka radova.",
   },
   {
-    question: "Koliko traje proces legalizacije (ozakonjenja) objekta?",
-    answer: "Rok zavisi od vrste objekta i lokalnih organa, ali u proseku postupak traje od 3 do 6 meseci. Na\u0161 biro priprema svu potrebnu dokumentaciju i aktivno prati proceduru kako bi se rok maksimalno skratio.",
+    question: "Šta obuhvata projekat pejzažne arhitekture i uređenja dvorišta?",
+    answer: "Vođeni principom da se 'vrt ne sadi — već gradi', pejzažni projekat kombinuje arhitektonske elemente (staze, nivelacije, vodene površine, pergole) sa brižljivo odabranom vegetacijom, kreirajući skladnu celinu u skladu sa okruženjem.",
   },
   {
-    question: "Da li radite na energetskim elaboratima i energetskim paso\u0161ima?",
-    answer: "Apsolutno. Izra\u0111ujemo energetske elaborate i energetske paso\u0161e za stambene i poslovne objekte, u skladu sa va\u017ee\u0107im propisima. Ovaj dokument je obavezan pri prodaji nekretnine i ishode\u0107ivanju upotrebne dozvole.",
+    question: "Da li radite kompletne adaptacije stanova i kuća u Novom Sadu?",
+    answer: "Da. Archipunct Studio realizuje kompletne adaptacije — od sanacije konstrukcije, novih instalacija i gipsarskih radova do unikatnih detalja i završnog opremanja rezidencijalnih i ugostiteljskih objekata.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function FaqSection() {
           <div className="lg:w-[35%]">
             <div className="sticky top-32">
               <p className="text-xl md:text-2xl lg:text-3xl font-light leading-snug tracking-tight text-[#0B0B0B]/80" style={{ fontFamily: "var(--font-inter)" }}>
-                Kompletna arhitektonska, pravna i tehnička podrška — od projektovanja do legalizacije i sudskog veštačenja.
+                Sveobuhvatan pristup prostoru — od konceptualne ideje i 360° vizuelizacije do pejzažnog uređenja i izvođenja.
               </p>
             </div>
           </div>

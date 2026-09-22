@@ -45,7 +45,7 @@ export default function MissionSection() {
       id="nasa-misija"
       className="relative w-full min-h-[90vh] md:min-h-screen overflow-hidden bg-[#0B0B0B] bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('/images/nasa-misija-bg.jpg')",
+        backgroundImage: "url('/images/archipunct/3web-1.jpg')",
         backgroundAttachment: "fixed",
       }}
       initial="hidden"
@@ -64,7 +64,7 @@ export default function MissionSection() {
         <div
           className="absolute inset-0"
           style={{
-            background: "rgba(10, 10, 10, 0.12)",
+            background: "rgba(10, 10, 10, 0.18)",
             backdropFilter: "blur(24px) saturate(140%)",
             WebkitBackdropFilter: "blur(24px) saturate(140%)",
           }}
@@ -74,7 +74,7 @@ export default function MissionSection() {
           className="absolute inset-y-0 right-0 w-32 pointer-events-none"
           style={{
             background:
-              "linear-gradient(to right, rgba(10,10,10,0) 0%, rgba(10,10,10,0.12) 100%)",
+              "linear-gradient(to right, rgba(10,10,10,0) 0%, rgba(10,10,10,0.18) 100%)",
             backdropFilter: "none",
           }}
         />
@@ -109,7 +109,7 @@ export default function MissionSection() {
                 style={{
                   fontFamily: "var(--font-inter), sans-serif",
                   fontSize: "clamp(4.5rem, 13vw, 12rem)",
-                  backgroundImage: "url('/images/nasa-misija-bg.jpg')",
+                  backgroundImage: "url('/images/archipunct/3web-1.jpg')",
                   backgroundAttachment: "fixed",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
@@ -146,32 +146,32 @@ export default function MissionSection() {
           {/* Index badge */}
           <m.span
             variants={copyFade}
-            className="text-[10px] font-bold tracking-[0.35em] uppercase text-white/40"
+            className="text-[10px] font-bold tracking-[0.35em] uppercase text-[#c89d4c]"
             style={{ fontFamily: "var(--font-inter)" }}
           >
-            04 — Arhitektonski projektni biro Vučković
+            04 — Archipunct Studio Novi Sad
           </m.span>
 
           {/* Mission statement */}
           <m.p
             variants={copyFade}
-            className="text-base md:text-lg font-light leading-relaxed text-white/80"
+            className="text-base md:text-lg font-light leading-relaxed text-white/90"
             style={{ fontFamily: "var(--font-cormorant), serif" }}
           >
-            Projektujemo prostore koji traju — kroz preciznost inženjera,
-            pažnju pravnog eksperta i osjećaj arhitekte. Svaki projekat,
-            od idejnog rešenja do sudskog veštačenja, odražava našu
-            posvećenost kvalitetu i integritetu.
+            &bdquo;Vrt se ne sadi &mdash; već gradi, prirodnim elementima: vodom,
+            stenama i biljkama, u harmoničnom spoju sa arhitekturom.&ldquo;
+            Stvaramo unikatne prostore koji inspirišu &mdash; kroz preciznost
+            forme, posvećenost detaljima i savremenu digitalnu viziju.
           </m.p>
 
           {/* CTA */}
           <m.a
             variants={copyFade}
             href="#o-nama"
-            className="inline-flex items-center gap-3 text-[10px] font-bold tracking-[0.25em] uppercase text-white/50 hover:text-[#7a8c3f] transition-colors duration-300 group mt-2"
+            className="inline-flex items-center gap-3 text-[10px] font-bold tracking-[0.25em] uppercase text-white/70 hover:text-[#c89d4c] transition-colors duration-300 group mt-2"
           >
-            <span className="border-b border-white/25 group-hover:border-[#7a8c3f] pb-px transition-colors duration-300">
-              Upoznajte studio
+            <span className="border-b border-white/25 group-hover:border-[#c89d4c] pb-px transition-colors duration-300">
+              Upoznajte naš pristup
             </span>
             <span className="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
           </m.a>

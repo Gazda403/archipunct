@@ -33,10 +33,10 @@ export default function Footer() {
               className="text-3xl md:text-4xl font-black tracking-tighter uppercase text-[#f5f4f0]"
               style={{ fontFamily: "var(--font-inter), sans-serif" }}
             >
-              Vučković Arhitekti
+              ARCHIPUNCT STUDIO
             </span>
-            <p className="text-sm text-white/40 font-light max-w-xs leading-relaxed">
-              Projektovanje, sudsko veštačenje i nadzor. Novi Sad, Srbija.
+            <p className="text-sm text-white/50 font-light max-w-sm leading-relaxed">
+              Arhitektura &bull; Enterijeri &bull; Pejzažno uređenje &bull; 3D Arhi-Viz. Master inž. arh. Boris Dačić, Novi Sad.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-xs font-semibold tracking-[0.22em] uppercase text-white/50 hover:text-[#7a8c3f] transition-colors duration-300"
+                className="text-xs font-semibold tracking-[0.22em] uppercase text-white/50 hover:text-[#c89d4c] transition-colors duration-300"
               >
                 {link.label}
               </a>
@@ -59,11 +59,11 @@ export default function Footer() {
 
         {/* Bottom Row */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <p className="text-xs text-white/25 tracking-wide">
-            © {year} Arhitektonski projektni biro Vučković — Sva prava zadržana.
+          <p className="text-xs text-white/40 tracking-wide">
+            &copy; {year} Archipunct Studio &bull; Master inž. arh. Boris Dačić &mdash; Sva prava zadržana.
           </p>
-          <p className="text-xs text-white/20 tracking-widest uppercase">
-            Novi Sad · Srbija
+          <p className="text-xs text-white/30 tracking-widest uppercase">
+            Rumenačka 19 &bull; Novi Sad &bull; Srbija
           </p>
         </div>
 

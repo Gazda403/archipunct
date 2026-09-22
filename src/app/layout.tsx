@@ -25,15 +25,30 @@ const chakra = Chakra_Petch({
 });
 
 export const metadata: Metadata = {
-  title: "Arhitektonski projektni biro Vučković | Projektovanje, nadzor i veštačenje — Novi Sad",
+  title: "Archipunct Studio | Arhitektura, Enterijeri i Pejzažno Uređenje — Novi Sad",
   description:
-    "Arhitektonski projektni biro Vučković — specijalizovani studio za arhitektonsko projektovanje, sudsko i vansudsko veštačenje, energetsku efikasnost i legalizaciju objekata. Novi Sad, Srbija.",
-  keywords: ["arhitektura", "projektovanje", "Novi Sad", "Vučković", "veštačenje", "legalizacija", "energetski pasoš", "nadzor"],
+    "Archipunct Studio — autorski arhitektonski studio koji vodi master inž. arh. Boris Dačić. Arhitektonsko projektovanje, unikatni dizajn enterijera, pejzažna arhitektura, adaptacije i fotorealistični 3D renderi. Novi Sad, Srbija.",
+  keywords: [
+    "Archipunct",
+    "Boris Dačić",
+    "arhitektura novi sad",
+    "dizajn enterijera novi sad",
+    "pejzažna arhitektura",
+    "uređenje enterijera",
+    "projektovanje enterijera",
+    "arhi viz",
+    "3d modelovanje i animacija",
+    "arhitektonski biro novi sad",
+    "adaptacije i renoviranje",
+    "dizajner enterijera novi sad",
+  ],
   openGraph: {
-    title: "Arhitektonski projektni biro Vučković",
-    description: "Projektovanje, nadzor i veštačenje — Novi Sad, Srbija",
+    title: "Archipunct Studio | Arhitektura · Enterijeri · Pejzažno Uređenje · 3D Viz",
+    description:
+      "Arhitektonsko projektovanje, dizajn enterijera, pejzažna arhitektura, adaptacije i 3D vizuelizacija. Master inž. arh. Boris Dačić — Novi Sad, Srbija.",
     type: "website",
     locale: "sr_RS",
+    siteName: "Archipunct Studio",
   },
 };
 

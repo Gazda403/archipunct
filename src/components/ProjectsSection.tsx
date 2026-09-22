@@ -6,24 +6,45 @@ import Image from "next/image";
 const projects = [
   {
     id: "01",
-    title: "STAMBENO-POSLOVNA ZGRADA",
-    description: "Stambeno-poslovna zgrada u Beogradu — kompletna projektna dokumentacija i nadzor.",
-    image: "/images/projekat-beograd.jpg",
+    title: "REZIDENCIJALNA VILA I ENTERIJER",
+    description: "Kompletno uređenje porodične kuće — otvoreni prostor, savremena kuhinja i obilje prirodnog svetla.",
+    image: "/images/archipunct/moderna-kuhinja-i-dnevni-boravak-arhitekta-novi-sad-beograd.jpg",
     delay: 0.1
   },
   {
     id: "02",
-    title: "KUĆA PORODICE VUKOJEVIĆ",
-    description: "Kuća porodice Vukojević — idejni i glavni projekat sa unutrašnjim uređenjem.",
-    image: "/images/projekat-kuca-vukojevic.jpg",
-    delay: 0.25
+    title: "PEJZAŽNO UREĐENJE PRIVATNOG VRTA",
+    description: "Ambijentalno oblikovanje porodičnog dvorišta sa čistim linijama, vodenim elementima i zelenilom.",
+    image: "/images/archipunct/2-copy_web.jpg",
+    delay: 0.2
   },
   {
     id: "03",
-    title: "POZORIŠTE & MTS POSLOVNA ZGRADA",
-    description: "Dogradnja pozorišta i poslovna zgrada MTS-a — kompleksno inženjersko rešenje.",
-    image: "/images/projekat-pozoriste-mts.jpg",
-    delay: 0.4
+    title: "UGOSTITELJSKI ENTERIJER — FIGARO",
+    description: "Dizajn poslastičarnice i kafea — autorska rasveta, sklad tekstura i unikatno izrađen nameštaj.",
+    image: "/images/archipunct/poslasticarnica_figaro_enterijer_91WEB.jpg",
+    delay: 0.3
+  },
+  {
+    id: "04",
+    title: "CENTRALNI PARK GAJDOBRA",
+    description: "Urbanistička studija i pejzažno oblikovanje centralnog parka sa pešačkim tokovima i zelenilom.",
+    image: "/images/archipunct/1-Gajdobra.jpg",
+    delay: 0.15
+  },
+  {
+    id: "05",
+    title: "ADAPTACIJA I RENOVIRANJE STANA",
+    description: "Celovita rekonstrukcija stambenog prostora u Novom Sadu — spoj funkcionalnosti i novog identiteta.",
+    image: "/images/archipunct/after_adaptacija_stana_novi-_sad1.jpg",
+    delay: 0.25
+  },
+  {
+    id: "06",
+    title: "LUXURY ENTERIJER KUPATILA",
+    description: "Dizajn detalja, sklad kontrasta i tekstura, minimalističke linije i skrivena rasveta.",
+    image: "/images/archipunct/Kupatilo_Lux1_web.jpg",
+    delay: 0.35
   }
 ];
 
@@ -106,9 +127,9 @@ export default function ProjectsSection() {
                   {project.id}
                 </span>
                 
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight relative inline-block w-fit group-hover:text-[#7a8c3f] transition-colors duration-300" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight relative inline-block w-fit group-hover:text-[#c89d4c] transition-colors duration-300" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
                   {project.title}
-                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#7a8c3f] group-hover:w-full transition-all duration-500 ease-[0.25,1,0.5,1]" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#c89d4c] group-hover:w-full transition-all duration-500 ease-[0.25,1,0.5,1]" />
                 </h3>
                 
                 <p className="text-sm md:text-base text-white/50 font-medium leading-relaxed mt-1">

@@ -17,33 +17,35 @@ const NAV_LINKS: NavLink[] = [
   { label: "Kontakt",  href: "#kontakt"  },
 ];
 
-const PHONE = "064/201 4809";
+const PHONE = "064 / 80 32 379";
 
-// ─── OXO Logo Mark ────────────────────────────────────────────────────────────
-function OxoLogo() {
+// ─── Archipunct Logo Mark ───────────────────────────────────────────────────
+function ArchipunctLogo() {
   return (
-    <a href="/" aria-label="Arhitektonski projektni biro Vučković — početna" className="flex items-center gap-2 group">
-      {/* Geometric diamond mark */}
+    <a href="/" aria-label="Archipunct Studio — početna" className="flex items-center gap-3 group">
+      {/* Archipunct Sunburst / Focal Point geometric mark */}
       <svg
-        width="28" height="28" viewBox="0 0 28 28"
+        width="30" height="30" viewBox="0 0 32 32"
         fill="none" aria-hidden="true"
-        className="transition-transform duration-500 group-hover:rotate-45"
+        className="transition-transform duration-700 group-hover:rotate-90"
       >
-        <rect
-          x="6" y="6" width="16" height="16"
-          transform="rotate(45 14 14)"
-          stroke="#f5f4f0" strokeWidth="1.5"
-        />
-        <rect
-          x="9" y="9" width="10" height="10"
-          transform="rotate(45 14 14)"
-          fill="#f5f4f0" fillOpacity="0.12"
-          stroke="#f5f4f0" strokeWidth="0.75"
-        />
+        {/* Core circle */}
+        <circle cx="16" cy="16" r="4.5" fill="#c89d4c" />
+        {/* Radiating architectural punct marks */}
+        <circle cx="16" cy="4" r="1.5" fill="#f5f4f0" />
+        <circle cx="16" cy="28" r="1.5" fill="#f5f4f0" />
+        <circle cx="4" cy="16" r="1.5" fill="#f5f4f0" />
+        <circle cx="28" cy="16" r="1.5" fill="#f5f4f0" />
+        <circle cx="7.5" cy="7.5" r="1.2" fill="#c89d4c" fillOpacity="0.8" />
+        <circle cx="24.5" cy="24.5" r="1.2" fill="#c89d4c" fillOpacity="0.8" />
+        <circle cx="7.5" cy="24.5" r="1.2" fill="#c89d4c" fillOpacity="0.8" />
+        <circle cx="24.5" cy="7.5" r="1.2" fill="#c89d4c" fillOpacity="0.8" />
+        {/* Thin orbit ring */}
+        <circle cx="16" cy="16" r="10" stroke="#f5f4f0" strokeWidth="0.8" strokeOpacity="0.25" strokeDasharray="3 3" />
       </svg>
-      <span className="text-[11px] font-bold tracking-[0.22em] uppercase text-[#f5f4f0] leading-none select-none">
-        VUČKOVIĆ<br />
-        <span className="font-light tracking-[0.32em] text-[9px]">ARHITEKTI</span>
+      <span className="text-[12px] font-bold tracking-[0.24em] uppercase text-[#f5f4f0] leading-none select-none">
+        ARCHIPUNCT<br />
+        <span className="font-medium tracking-[0.36em] text-[8.5px] text-[#c89d4c]">STUDIO</span>
       </span>
     </a>
   );
@@ -73,7 +75,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-[1680px] px-6 md:px-10 lg:px-16 h-[72px] flex items-center justify-between">
 
         {/* Logo */}
-        <OxoLogo />
+        <ArchipunctLogo />
 
         {/* Desktop Centre Nav */}
         <nav
@@ -87,7 +89,7 @@ export default function Navbar() {
               className="relative text-[11px] font-medium tracking-[0.18em] uppercase text-[#f5f4f0]/70 hover:text-[#f5f4f0] transition-colors duration-300 group"
             >
               {link.label}
-              <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-[#f5f4f0] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-[#c89d4c] transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>
@@ -95,16 +97,16 @@ export default function Navbar() {
         {/* Right — Phone Badge */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="tel:+381642014809"
+            href="tel:+381648032379"
             aria-label={`Pozovite nas: ${PHONE}`}
-            className="group flex items-center gap-2.5 rounded-full border border-[#f5f4f0]/20 px-4 py-2 hover:border-[#f5f4f0]/60 hover:bg-[#f5f4f0]/5 transition-all duration-300"
+            className="group flex items-center gap-2.5 rounded-full border border-[#f5f4f0]/20 px-4 py-2 hover:border-[#c89d4c]/60 hover:bg-[#c89d4c]/10 transition-all duration-300"
           >
             {/* Pulse dot */}
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#7a8c3f] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7a8c3f]" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#c89d4c] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#c89d4c]" />
             </span>
-            <span className="text-[10px] font-mono tracking-widest text-[#f5f4f0]/70 group-hover:text-[#f5f4f0] transition-colors duration-300">
+            <span className="text-[10px] font-mono tracking-widest text-[#f5f4f0]/80 group-hover:text-[#f5f4f0] transition-colors duration-300">
               {PHONE}
             </span>
           </a>
@@ -143,8 +145,8 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href={`tel:${PHONE.replace(/\s/g, "")}`}
-            className="text-[11px] font-mono tracking-widest text-[#7a8c3f] mt-3 pb-2"
+            href="tel:+381648032379"
+            className="text-[11px] font-mono tracking-widest text-[#c89d4c] mt-3 pb-2"
           >
             {PHONE}
           </a>

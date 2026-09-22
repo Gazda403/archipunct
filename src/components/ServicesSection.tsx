@@ -6,23 +6,23 @@ import { m, useScroll, useTransform, Variants } from "framer-motion";
 const services = [
   {
     id: "02.1",
-    title: "Projektovanje",
-    description: "Idejni i glavni projekti (instalacije, PP zaštita, energetska efikasnost), projekti za ozakonjenje, enterijeri i tehnička kontrola dokumentacije.",
+    title: "Dizajn Enterijera",
+    description: "Unikatno uređenje rezidencijalnih i komercijalnih prostora (stanovi, kuće, kafići, restorani). Autorski dizajn forme i detalja uz 360° virtuelne ture.",
   },
   {
     id: "02.2",
-    title: "Sudsko Veštačenje",
-    description: "Sudsko veštačenje građevinske struke, oblast arhitektura, uža specijalnost visokogradnja. Izrada stručnih nalaza i mišljenja veštaka.",
+    title: "Arhitektonsko Projektovanje",
+    description: "Projektovanje svih vrsta objekata — od početne ideje i konceptualne forme do detaljne razrade, izvođačkog projekta i realizacije.",
   },
   {
     id: "02.3",
-    title: "Izvođenje i Nadzor",
-    description: "Izvođenje stambenih i poslovnih objekata po građevinskoj dozvoli, izvođenje enterijera, stručni nadzor i tehnički pregled za upotrebnu dozvolu.",
+    title: "Pejzažna Arhitektura",
+    description: "Dizajn i uređenje privatnih vrtova, dvorišta, trgova i parkovskih površina u skladu sa infrastrukturom. Vrt se ne sadi — već gradi.",
   },
   {
     id: "02.4",
-    title: "Konsalting",
-    description: "Pribavljanje dozvola za gradnju, savetovanje, procena tržišne i građevinske vrednosti nekretnina i izrada studija opravdanosti ulaganja.",
+    title: "Adaptacije & 3D Arhi-Viz",
+    description: "Kompletna rekonstrukcija prostora Novi Sad (pre i posle) uz vrhunsko fotorealistično 3D modelovanje, CGI rendering i animaciju.",
   }
 ];
 
@@ -156,12 +156,12 @@ export default function ServicesSection() {
               {/* Link / Button */}
               <div className="overflow-hidden mt-4 md:mt-auto pt-2">
                 <m.a 
-                  href="#" 
+                  href="#kontakt" 
                   variants={itemVariants}
-                  className="inline-flex items-center gap-2 text-sm md:text-base font-bold uppercase tracking-widest transition-all duration-300 hover:text-[#7a8c3f]"
+                  className="inline-flex items-center gap-2 text-sm md:text-base font-bold uppercase tracking-widest transition-all duration-300 hover:text-[#c89d4c]"
                 >
-                  <span className="border-b-2 border-[#0B0B0B] group-hover:border-[#7a8c3f] pb-0.5 transition-colors">
-                    Saznajte više
+                  <span className="border-b-2 border-[#0B0B0B] group-hover:border-[#c89d4c] pb-0.5 transition-colors">
+                    Zatražite ponudu
                   </span>
                   <span className="text-lg transition-transform duration-300 group-hover:translate-x-2">→</span>
                 </m.a>

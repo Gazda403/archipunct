@@ -82,14 +82,14 @@ function MagneticCTA() {
     >
       {/* Sliding hover fill */}
       <m.span
-        className="absolute inset-0 rounded-full bg-[#7a8c3f] origin-left"
+        className="absolute inset-0 rounded-full bg-[#c89d4c] origin-left"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: hovered ? 1 : 0 }}
         transition={{ duration: 0.42, ease: [0.4, 0, 0.2, 1] }}
       />
       <span
         className={`relative z-10 flex items-center gap-2 transition-colors duration-300 ${
-          hovered ? "text-[#f5f4f0]" : "text-[#0a0a0a]"
+          hovered ? "text-[#0a0a0a] font-bold" : "text-[#0a0a0a]"
         }`}
       >
         Pogledajte projekte
@@ -111,7 +111,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      aria-label="Arhitektonski projektni biro Vučković — Naslovna sekcija"
+      aria-label="Archipunct Studio — Naslovna sekcija"
       className="relative w-full h-screen min-h-[640px] max-h-[1200px] overflow-hidden bg-[#0a0a0a]"
     >
       {/* ── NOISE TEXTURE OVERLAY ──────────────────────────────────────────── */}
@@ -130,10 +130,10 @@ export default function HeroSection() {
         animate={{ scale: 1,    opacity: 1 }}
         transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
       >
-        {/* ── Mobile / Tablet image (for non-PC/laptop viewers) ── */}
+        {/* ── Mobile / Tablet image ── */}
         <Image
-          src="/images/vuckovic-hero-mobile.jpg"
-          alt="Arhitektonski projektni biro Vučković — moderna rezidencijalna zgrada"
+          src="/images/archipunct/3web-1-1245x700.jpg"
+          alt="Archipunct Studio — autorski dizajn enterijera i arhitektura"
           fill
           priority
           sizes="100vw"
@@ -142,8 +142,8 @@ export default function HeroSection() {
         />
         {/* ── Desktop / Laptop image ── */}
         <Image
-          src="/images/vuckovic-hero-main.jpg"
-          alt="Arhitektonski projektni biro Vučković — moderna rezidencijalna zgrada"
+          src="/images/archipunct/3web-1.jpg"
+          alt="Archipunct Studio — autorski dizajn enterijera i arhitektura"
           fill
           priority
           sizes="100vw"
@@ -151,23 +151,23 @@ export default function HeroSection() {
           quality={92}
         />
         {/* Subtle vignette — darkens edges without killing the sky */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/40 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/60 via-transparent to-transparent" />
       </m.div>
 
       {/* ═══════════════════════════════════════════════════════════════════════
           Z-10 ── Brand Typography:
-                  Desktop / Laptop: "ARHITEKTI" on facade
-                  Mobile / Tablet: "VUČKOVIĆ" text overlay above building
+                  Desktop / Laptop: "ARCHIPUNCT" display
+                  Mobile / Tablet: "ARCHIPUNCT" overlay with studio tagline
       ════════════════════════════════════════════════════════════════════════ */}
 
-      {/* ARHITEKTI — PC / Laptop only */}
+      {/* ARCHIPUNCT — PC / Laptop only */}
       <m.div
         aria-hidden="true"
         className="absolute inset-x-0 z-10 hidden lg:flex items-center justify-center pointer-events-none select-none transform-gpu"
         style={{ top: "37%" }}
         initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 0.25, y: 0 }}
+        animate={{ opacity: 0.28, y: 0 }}
         transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
       >
         <h2
@@ -175,16 +175,16 @@ export default function HeroSection() {
           style={{
             fontFamily: "var(--font-chakra), sans-serif",
             fontWeight: 700,
-            fontSize: "clamp(1.5rem, 5vw, 6rem)",
-            letterSpacing: "0.45em",
-            textShadow: "0 0 40px rgba(0,0,0,0.3)",
+            fontSize: "clamp(2rem, 6.2vw, 7.5rem)",
+            letterSpacing: "0.38em",
+            textShadow: "0 0 50px rgba(0,0,0,0.5)",
           }}
         >
-          arhitekti
+          archipunct
         </h2>
       </m.div>
 
-      {/* VUČKOVIĆ — Mobile / Tablet (non-PC/laptop) text overlay above building */}
+      {/* ARCHIPUNCT — Mobile / Tablet overlay */}
       <m.div
         aria-hidden="true"
         className="absolute inset-x-0 z-10 flex lg:hidden flex-col items-center justify-center pointer-events-none select-none transform-gpu px-4"
@@ -198,21 +198,21 @@ export default function HeroSection() {
           style={{
             fontFamily: "var(--font-chakra), sans-serif",
             fontWeight: 700,
-            fontSize: "clamp(3.2rem, 15vw, 6.5rem)",
-            letterSpacing: "0.06em",
-            textShadow: "0 4px 30px rgba(0,0,0,0.5)",
+            fontSize: "clamp(2.5rem, 12vw, 5.5rem)",
+            letterSpacing: "0.08em",
+            textShadow: "0 4px 30px rgba(0,0,0,0.7)",
           }}
         >
-          VUČKOVIĆ
+          ARCHIPUNCT
         </h2>
         <p
-          className="text-white/70 uppercase tracking-[0.42em] font-light mt-3 whitespace-nowrap text-center"
+          className="text-[#c89d4c] uppercase tracking-[0.38em] font-medium mt-3 whitespace-nowrap text-center"
           style={{
             fontFamily: "var(--font-chakra), sans-serif",
-            fontSize: "clamp(0.95rem, 4.2vw, 1.4rem)",
+            fontSize: "clamp(0.8rem, 3.5vw, 1.1rem)",
           }}
         >
-          ARHITEKTI
+          ARHITEKTURA &bull; ENTERIJERI &bull; PEJZAŽ
         </p>
       </m.div>
 
@@ -221,7 +221,7 @@ export default function HeroSection() {
       ════════════════════════════════════════════════════════════════════════ */}
       <div className="absolute inset-0 z-30 pointer-events-none">
 
-        {/* ── "ARHITEKTI" secondary brand word ─────────────────────────────── */}
+        {/* ── "ARCHIPUNCT" secondary brand word ─────────────────────────────── */}
         <m.p
           aria-hidden="true"
           className="absolute pointer-events-none select-none font-light tracking-[0.38em] text-[#f5f4f0]/50 uppercase"
@@ -236,13 +236,13 @@ export default function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ ...SPRING_SMOOTH, delay: 1.0 }}
         >
-          ARHITEKTI
+          ARCHIPUNCT
         </m.p>
 
         {/* ── Horizontal rule accent ───────────────────────────────────────── */}
         <m.div
           aria-hidden="true"
-          className="absolute bottom-[clamp(8rem,14vh,12rem)] left-[clamp(1.5rem,5vw,5rem)] w-8 h-px bg-[#7a8c3f]"
+          className="absolute bottom-[clamp(8rem,14vh,12rem)] left-[clamp(1.5rem,5vw,5rem)] w-10 h-px bg-[#c89d4c]"
           initial={{ scaleX: 0, opacity: 0 }}
           animate={{ scaleX: 1, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.9 }}
@@ -262,11 +262,11 @@ export default function HeroSection() {
           animate="visible"
         >
           {/* Tagline — split-line masking reveal */}
-          <div aria-label="PROJEKTOVANJE, NADZOR I VEŠTAČENJE">
+          <div aria-label="ARHITEKTONSKO PROJEKTOVANJE I DIZAJN ENTERIJERA">
             {[
-              "PROJEKTOVANJE I NADZOR",
-              "SUDSKO VEŠTAČENJE",
-              "NOVI SAD, SRBIJA",
+              "ARHITEKTONSKO PROJEKTOVANJE",
+              "DIZAJN ENTERIJERA & PEJZAŽ",
+              "BORIS DAČIĆ · NOVI SAD",
             ].map((line) => (
               <div key={line} className="clip-text overflow-hidden">
                 <m.span
@@ -299,12 +299,12 @@ export default function HeroSection() {
           animate="visible"
         >
           <p
-            className="text-[#f5f4f0]/40 font-mono uppercase leading-relaxed"
-            style={{ fontSize: "clamp(0.55rem, 0.7vw, 0.72rem)", letterSpacing: "0.18em" }}
+            className="text-[#f5f4f0]/70 font-mono uppercase leading-relaxed"
+            style={{ fontSize: "clamp(0.58rem, 0.75vw, 0.76rem)", letterSpacing: "0.18em" }}
           >
-            Duško Vučković
+            Master inž. arh. Boris Dačić
             <br />
-            Novi Sad, Srbija
+            <span className="text-[#c89d4c]">Rumenačka 19 · Novi Sad</span>
           </p>
         </m.div>
 
@@ -316,12 +316,12 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...SPRING_SMOOTH, delay: 1.4 }}
         >
-          <div className="w-px h-10 bg-gradient-to-b from-transparent to-[#f5f4f0]/25" />
+          <div className="w-px h-10 bg-gradient-to-b from-transparent to-[#c89d4c]" />
           <span
-            className="font-mono text-[#f5f4f0]/30 uppercase"
-            style={{ fontSize: "0.55rem", letterSpacing: "0.25em" }}
+            className="font-mono text-[#c89d4c] uppercase text-[10px]"
+            style={{ letterSpacing: "0.25em" }}
           >
-            NS
+            ARCHIPUNCT
           </span>
         </m.div>
       </div>

@@ -37,7 +37,7 @@ export default function AboutSection() {
       className="relative w-full min-h-screen bg-[#0a0a0a] text-[#f5f4f0] py-32 px-6 md:px-12 lg:px-24 overflow-hidden"
     >
       {/* Background Accent */}
-      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-[#7a8c3f]/5 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/4" />
+      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-[#c89d4c]/5 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/4" />
 
       <m.div 
         className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center"
@@ -54,8 +54,8 @@ export default function AboutSection() {
             className="absolute top-0 left-0 w-3/4 h-3/4 rounded-sm overflow-hidden z-10 shadow-2xl"
           >
             <Image 
-              src="/images/about_office.png" 
-              alt="Arhitektonski projektni biro Vučković — Studio"
+              src="/images/archipunct/uredjenje-kuce-1.jpg" 
+              alt="Archipunct Studio — autorska arhitektura i enterijeri"
               fill
               className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -73,8 +73,8 @@ export default function AboutSection() {
             className="absolute bottom-0 right-0 w-3/5 h-3/5 rounded-sm overflow-hidden z-20 shadow-2xl border-4 border-[#0a0a0a]"
           >
             <Image 
-              src="/images/about_model.png" 
-              alt="Architectural Model"
+              src="/images/archipunct/perspective.jpg" 
+              alt="Archipunct arhitektonski model i perspektiva"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 30vw"
@@ -86,7 +86,7 @@ export default function AboutSection() {
         <div className="flex flex-col justify-center">
           <m.div variants={flyInUp} className="mb-4">
             <h2 
-              className="text-[#7a8c3f] uppercase tracking-[0.3em] text-xs md:text-sm font-semibold mb-4"
+              className="text-[#c89d4c] uppercase tracking-[0.3em] text-xs md:text-sm font-semibold mb-4"
             >
               O nama
             </h2>
@@ -94,26 +94,29 @@ export default function AboutSection() {
               className="font-light text-4xl md:text-5xl lg:text-6xl leading-tight mb-8"
               style={{ fontFamily: "var(--font-cormorant), serif" }}
             >
-              Inženjerska preciznost i <span className="italic text-white/80">pravna stručnost</span> u jednom birou.
+              Umetnost prostora, <span className="italic text-[#c89d4c]">funkcionalnost forme</span> i digitalna vizija.
             </h3>
           </m.div>
 
-          <m.p variants={flyInUp} className="text-white/60 text-base md:text-lg leading-relaxed mb-6 font-light">
-            Projektni biro Vučković osnovan je 2005. godine u Novom Sadu od strane diplomiranog inženjera arhitekture Duška Vučkovića (rod. 1970.), kao biro čije su osnovne usluge projektni konsalting, veštačenje i arhitektonsko projektovanje. U dosadašnjem radu realizovao je brojne projekte za objekte različitih namena — od stambenih i stambeno-poslovnih objekata, pa sve do industrijskih objekata, trgovinskih centara, sportskih i ugostiteljskih objekata.
+          <m.p variants={flyInUp} className="text-white/70 text-base md:text-lg leading-relaxed mb-6 font-light">
+            Archipunct Studio je autorski arhitektonski biro koji vodi master inženjer arhitekture Boris Dačić, diplomiran na Departmanu za arhitekturu i urbanizam Fakulteta tehničkih nauka u Novom Sadu. Objedinjujući višedecenijsko iskustvo u arhitektonskom projektovanju, dizajnu enterijera, pejzažnoj arhitekturi i naprednim CGI vizuelnim tehnologijama, Archipunct stvara prostore sa upečatljivim autorskim pečatom.
           </m.p>
 
-          <m.p variants={flyInUp} className="text-white/60 text-base md:text-lg leading-relaxed mb-10 font-light">
-            Opredeljenost ovog biroa od samog početka jeste stručnost i efikasnost u poslu uz poštovanje profesionalne etike, pravnih standarda i stalno usavršavanje u okviru arhitektonske i projektantske prakse. Sve projekte realizujemo u saradnji sa licenciranim inženjerima elektroinstalacija, konstrukcije, termomašinskih instalacija i klimatizacije.
+          <m.p variants={flyInUp} className="text-white/70 text-base md:text-lg leading-relaxed mb-10 font-light">
+            Od konceptualne skice do izvođačkih detalja, svaki projekat posmatramo kao jedinstvenu celinu. Naš rad uvršten je na listu 15 vodećih arhitekata u Novom Sadu (Top 15 Architects in Novi Sad), dok su naše urbanističke studije i projekti uređenja javnih i parkovskih površina (Sremski Karlovci, Gajdobra, Irig) zapaženi i visoko ocenjeni pred stručnom javnošću i Udruženjem urbanista Srbije.
           </m.p>
 
           <m.div variants={flyInUp}>
-             <button className="group relative overflow-hidden rounded-full border border-white/20 bg-transparent px-8 py-3.5 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#f5f4f0] transition-colors hover:border-[#7a8c3f]">
-                <span className="relative z-10 flex items-center gap-2">
-                  Upoznajte tim
+             <a 
+               href="#projekti"
+               className="group relative inline-flex overflow-hidden rounded-full border border-white/20 bg-transparent px-8 py-3.5 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#f5f4f0] transition-colors hover:border-[#c89d4c]"
+             >
+                <span className="relative z-10 flex items-center gap-2 group-hover:text-[#0a0a0a] transition-colors duration-300">
+                  Pogledajte radove
                   <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </span>
-                <div className="absolute inset-0 z-0 bg-[#7a8c3f] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100" />
-             </button>
+                <div className="absolute inset-0 z-0 bg-[#c89d4c] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100" />
+             </a>
           </m.div>
         </div>
 
